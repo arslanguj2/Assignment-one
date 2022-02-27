@@ -1,0 +1,177 @@
+* {
+    font-family: "Archivo", sans-serif;
+    box-sizing: border-box;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.cust-card-people {
+    color: #656565;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.cust-card-price {
+    color: #656565;
+    font-size: 22px;
+}
+
+.cust-red-bench {
+    color: #000000;
+    font-weight: bold;
+}
+
+.pagination {
+    display: inline-block;
+    text-align: center;
+}
+
+.pagination a {
+    color: #b4b4b4;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+.pagination a:hover {
+    color: #000000;
+}
+
+.page-num-active {
+    color: #000 !important;
+}
+
+.mobile {
+    display: none;
+}
+
+.form-check-input:checked {
+    background-color: #ffffff;
+    border-color: #000000;
+}
+
+.form-check label,
+.form-check input {
+    cursor: pointer;
+}
+
+.form-check {
+    padding: 15px 0;
+    margin-bottom: 0;
+}
+
+.form-check-label {
+    font-size: 18px;
+    line-height: normal;
+    padding-left: 10px;
+}
+
+.form-check .form-check-input {
+    margin-left: 0;
+    margin-top: 0;
+}
+
+.category-check h5,
+.price-check h5 {
+    padding: 24px 0;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.category-check {
+    padding-bottom: 24px;
+    border-bottom: 2px solid #c2c2c2;
+}
+
+.no-big-media {
+    display: none;
+}
+
+.media-filter-mobile {
+    display: none !important;
+}
+
+.close-set {
+    width: 15px;
+    cursor: pointer;
+}
+
+.set-position {
+    z-index: 1000;
+    background-color: white;
+    width: 100%;
+}
+
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    background-color: white;
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+.btn-mobile {
+    justify-content: center;
+    width: 100%;
+    padding: 40px 0;
+}
+.btn-mobile button {
+    padding: 10px 0;
+    width: 40%;
+    font-size: 18px;
+    border: 4px solid #000;
+    background-color: #000;
+    margin: 10px;
+    color: white;
+}
+.btn-mobile .btn-clear {
+    background-color: #fff !important;
+    color: #000;
+}
+
+/* --------------------media-queries---------------- */
+
+@media (max-width: 768px) {
+    .mobile {
+        display: block;
+    }
+
+    .on-pc {
+        display: none;
+    }
+
+    .left-media {
+        text-align: left !important;
+    }
+
+    .detail-p {
+        margin-right: 0;
+    }
+
+    .mt-media {
+        margin-top: 24px !important;
+    }
+}
+
+@media (max-width: 592px) {
+    .no-small-media {
+        display: none !important;
+    }
+
+    .no-big-media {
+        display: block;
+        cursor: pointer;
+    }
+
+    .media-filter-pc {
+        display: none !important;
+    }
+
+    .media-filter-mobile {
+        display: block !important;
+    }
+}
